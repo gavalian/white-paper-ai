@@ -1,0 +1,82 @@
+\documentclass[11pt,titlepage]{article}
+%\usepackage{arxiv}
+\usepackage{bm,amsmath,amsfonts,amssymb}
+\usepackage{hyperref}       % hyperlinks
+\usepackage{graphicx} % Required for inserting images
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{url}        
+\usepackage{doi}
+\usepackage{verbatim}
+\usepackage{xcolor}
+\usepackage[affil-it]{authblk}
+\usepackage [english]{babel}
+\usepackage [autostyle, english = american]{csquotes}
+\MakeOuterQuote{"}
+\usepackage[letterpaper,
+            bindingoffset=0.in,
+            left=1in,
+            right=1in,
+            top=1in,
+            bottom=1in,
+            footskip=0.15in]{geometry}
+%\linenumbers
+% \usepackage[affil-it]{authblk}
+\usepackage{subcaption}
+\newcommand{\note}[1]{\textcolor{blue}{#1}}
+\definecolor{LightCyan}{rgb}{0.88,1,1}
+\definecolor{LightRose}{rgb}{1,0.88,0.88}
+\definecolor{LightGreen}{rgb}{0.88,1,0.88}
+
+\title{Integration of AI/ML in experimental data lyfecycle in CLAS12}
+\author{Gagik Gavalian}
+\author{Harut Avakian}
+\author{Richard Tyson}
+\author{Patrick Achenbach}
+\affil{Jefferson Lab, Newport News, VA, USA}
+
+\author{Aleksandr Privalov}
+\affil{NIIChaVo}
+
+%\address[1]{Jefferson Lab, Newport News, VA, USA}
+%\address[2]{NIIChaVo }
+
+
+\begin{document}
+
+%\begin{titlepage}
+
+\maketitle
+
+\begin{abstract}
+    Artificial Intelligence and Machine Learning (AI/ML) algorithms have seen a variety of implemented 
+    and proof-of-concept applications at the CEBAF Large Acceptance Spectrometer at 12 GeV (CLAS12) located 
+    at the Continuous Electron Beam Accelerator Facility (CEBAF). Past applications have focused on data-taking, 
+    reconstruction, simulation, and data analysis, whilst several other stages in the process chain will benefit 
+    from the full application of AI/ML. This paper introduces a proposal to combine the existing 
+    wealth of experience and applications at CLAS12 and implement novel AI/ML-based solutions where they are missing. 
+    This implementation aims to improve the overall experimental life cycle, minimizing the time required to produce and 
+    publish higher-quality data compared to existing paradigms. This will transform a human-driven nuclear 
+    physics experiment into a fully AI/ML-assisted one
+\end{abstract}
+%\end{titlepage}
+%\maketitle
+
+\input{introduction}
+
+\input{dataacquisition}
+
+\input{detectormonitoring}
+
+\input{reconstruction}
+
+\input{physicsanalysis}
+
+%\input{data_analysis_data}
+%\input{results}
+
+\input{summary}
+
+\bibliography{references}
+\bibliographystyle{ieeetr}
+
+\end{document}
